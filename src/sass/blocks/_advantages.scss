@@ -1,6 +1,7 @@
 .advantages {
     min-height: 472px;
     padding: 70px 0 65px 0;
+    background-color: #f6f6f6;
     &__wrapper {
         margin-top: 65px;
         display: flex;
@@ -33,6 +34,15 @@
             font-weight: 300;
             line-height: 18px;
             text-decoration-line: underline;
+        }
+    }
+    &__icon {
+        &_animated {
+            animation: heartbeat 1.5s ease infinite;
+            &:hover {
+                // animation-play-state: paused;
+                animation-duration: .5s;
+            }
         }
     }
 }

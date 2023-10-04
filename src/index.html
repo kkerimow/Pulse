@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/fonts.css">
     <!-- <link rel="stylesheet" href="css/slick.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -68,7 +69,7 @@
                     </div>
                 </div>
                 <div class="advantages__item">
-                    <img src="icons/section_2/heart.png" alt="heart">
+                    <img src="icons/section_2/heart.png" alt="heart" class="advantages__icon advantages__icon_animated">
                     <div class="advantages__title">Заботимся о здоровье</div>
                     <div class="advantages__descr">
                         Мы работаем для того, чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в радость Вам и Вашим близким!
@@ -96,9 +97,9 @@
                 и мы перезвоним вам в течении 10
             </div>
 
-            <form class="feed-form" action="#">
+            <form id="consultation-form" class="feed-form" action="#">
                 <input name="name" type="text" placeholder="Ваше имя">
-                <input name="phone" type="number" placeholder="Ваш телефон">
+                <input name="phone" placeholder="Ваш телефон">
                 <input name="email" type="email" placeholder="Ваш E-mail">
                 <button class="button button_submit">заказать кОНСУЛЬТАЦИЮ</button>
             </form>
@@ -395,17 +396,17 @@
         </div>
     </section>
 
-    <section class="comments">
+    <section class="feed">
         <div class="container">
             <h2 class="title">отзывы клиентов</h2>
-            <div class="comments__item">
-                <div class="comments__img">
+            <div class="feed__item wow animate__fadeInUp">
+                <div class="feed__img">
                     <img src="img/section_6/photo_1.png" alt="irina">
                 </div>
                 <div class="comment__descr">
-                    <div class="comments__name">Ирина Иванченко</div>
-                    <div class="comments__subtitle">2 полумарафона</div>
-                    <div class="comments__text">
+                    <div class="feed__name">Ирина Иванченко</div>
+                    <div class="feed__subtitle">2 полумарафона</div>
+                    <div class="feed__text">
                         Не знала, что себе купить - обратилась к ребятам из RunSmart - подобрали пульсометр, который подошёл именно под мои цели и финансовые возможности.Через некоторое время решила обновить гаджет - не раздумывая обратилась туда же.
                         <br><br>
                         Новые цели - новый гаджет!
@@ -414,14 +415,14 @@
                     </div>
                 </div>
             </div>
-            <div class="comments__item">
-                <div class="comments__img">
+            <div class="feed__item wow animate__fadeInUp">
+                <div class="feed__img">
                     <img src="img/section_6/photo_2.png" alt="ivan">
                 </div>
                 <div class="comment__descr">
-                    <div class="comments__name">Иван Сёмочкин</div>
-                    <div class="comments__subtitle">1 полумарафон</div>
-                    <div class="comments__text">
+                    <div class="feed__name">Иван Сёмочкин</div>
+                    <div class="feed__subtitle">1 полумарафон</div>
+                    <div class="feed__text">
                         Крутая штука-пульсометр. Обычно без них бегал. Оказывается только хуже себе делал.
                         <br>
                         Купил пульсометр, ещё в подарок получил тренировку. Со мной вместе провели первую тренировку, научили пользоваться новым гаджетом. Также объяснили основы анатомии, составили план тренировок на месяц вперёд.
@@ -430,14 +431,14 @@
                     </div>
                 </div>
             </div>
-            <div class="comments__item">
-                <div class="comments__img">
+            <div class="feed__item wow animate__fadeInUp">
+                <div class="feed__img">
                     <img src="img/section_6/photo_3.png" alt="yulia">
                 </div>
                 <div class="comment__descr">
-                    <div class="comments__name">Юлия Дашкина</div>
-                    <div class="comments__subtitle">2 полумарафона</div>
-                    <div class="comments__text">
+                    <div class="feed__name">Юлия Дашкина</div>
+                    <div class="feed__subtitle">2 полумарафона</div>
+                    <div class="feed__text">
                         Долго не могла начать бегать, т.к. до этого несколько раз начинала, но становилось тяжело и я бросала. От друзей услышала о RunSmart и о беге с контролем пульса и решила попробовать.
                         <br><br>
                         Позвонила, ребята поинтересовались моими целями и подобрали очень интересный вариант со скидкой! Теперь бегаю и наслаждаюсь бегом! Пробежала уже 2 полумарафона и несколько более коротких забегов и не намерена останавливаться!
@@ -471,7 +472,7 @@
             <div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
             <form class="feed-form feed-form_mt25" action="#">
                 <input name="name" type="text" placeholder="Ваше имя">
-                <input name="phone" type="number" placeholder="Ваш телефон">
+                <input name="phone" placeholder="Ваш телефон">
                 <input name="email" type="email" placeholder="Ваш E-mail">
                 <button class="button button_submit">заказать кОНСУЛЬТАЦИЮ</button>
             </form>
@@ -483,7 +484,7 @@
             <div class="modal__descr">Пульсометр Polar FT1</div>
             <form class="feed-form feed-form_mt25" action="#">
                 <input name="name" type="text" placeholder="Ваше имя">
-                <input name="phone" type="number" placeholder="Ваш телефон">
+                <input name="phone" placeholder="Ваш телефон">
                 <input name="email" type="email" placeholder="Ваш E-mail">
                 <button class="button button_submit">Купить</button>
             </form>
@@ -502,6 +503,9 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <!-- <script src="js/slick.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
